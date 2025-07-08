@@ -1,0 +1,33 @@
+.education-section {
+  padding: 40px;
+  background-color: #eef4f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.education-section h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.education-item {
+  background: #fff;
+  border-left: 5px solid #0078d7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.education-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #0078d7;
+}
+
+.education-item p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #444;
+}

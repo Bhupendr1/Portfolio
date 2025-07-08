@@ -1,0 +1,108 @@
+.experience-section {
+  background-color: #f4f8fc;
+  font-family: 'Roboto', sans-serif;
+  animation: fadeIn 1.2s ease-in;
+  padding: 20px;
+}
+
+.experience-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #0078d7;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+.job {
+  background: #fff;
+  border-left: 6px solid #0078d7;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+  font-size: 1.4em;
+  color: #0078d7;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.job h3::before {
+  content: "🏢";
+}
+
+.job span {
+  font-size: 0.95em;
+  color: #666;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.job ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.sub-project,
+.skills-gained {
+  background-color: #fdfdfd;
+  border-left: 4px solid #0099cc;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.04);
+}
+
+.sub-project h4,
+.skills-gained h4 {
+  font-size: 1.2em;
+  color: #0099cc;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sub-project h4::before {
+  content: "🛠️";
+}
+
+.skills-gained h4::before {
+  content: "🎓";
+}
+
+.sub-project p {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.sub-project ul,
+.skills-gained ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

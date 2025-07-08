@@ -1,0 +1,35 @@
+.sidenav-container {
+  height: calc(100vh - 64px); /* 64px is the toolbar height */
+}
+
+.sidenav {
+  width: 250px;
+  overflow-y: auto;
+}
+.active-link {
+  background-color: #e3f2fd;
+  border-left: 4px solid #0078d7;
+  font-weight: 600;
+  color: #0078d7;
+    transition: all 0.3s ease;
+}
+
+mat-list-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+mat-list-item:hover {
+  background-color: #f0f8ff;
+  color: #0078d7;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="toolbar">
+  <button mat-icon-button *ngIf="isMobile" (click)="sidenav.toggle()" class="mobile-toggle">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="logo">Bhupendra.dev</span>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav [mode]="sidenavMode" [fixedInViewport]="isMobile" [opened]="!isMobile">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeOnNavigate()">Hero</a>
+      <a mat-list-item routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeOnNavigate()">About</a>
+      <a mat-list-item routerLink="/profile" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeOnNavigate()">Skills</a>
+      <a mat-list-item routerLink="/projects" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeOnNavigate()">Projects</a>
+      <a mat-list-item routerLink="/experience" routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }" (click)="closeOnNavigate()">Experience</a>
+      <a mat-list-item routerLink="/extraskill" routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }" (click)="closeOnNavigate()">Extra Skill</a>
+      <a mat-list-item routerLink="/certificate" routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }" (click)="closeOnNavigate()">Certificates</a>
+      <a mat-list-item routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeOnNavigate()">Contact</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+<mat-sidenav-content>
+  <div class="page-container" [@routeAnimations]="prepareRoute()">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-content>
+
+</mat-sidenav-container>
